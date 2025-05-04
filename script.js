@@ -74,10 +74,11 @@ fetch('dicTest.json')
         `;
 
         // Mostrar información en el log
-        logMessage(`ID: ${randomItem.id}`);
-        logMessage(`Kanji: ${randomItem.kanji[0].text}`);
-        logMessage(`Kana: ${randomItem.kana[0].text}`);
-        logMessage(`Español: ${randomItem.sense[0].gloss[0].text}`);
+        console.log(randomItem)
+        // logMessage(`ID: ${randomItem.id}`);
+        // logMessage(`Kanji: ${randomItem.kanji[0].text}`);
+        // logMessage(`Kana: ${randomItem.kana[0].text}`);
+        // logMessage(`Español: ${randomItem.sense[0].gloss[0].text}`);
     })
     .catch(error => {
         logMessage(`Error cargando el archivo JSON: ${error}`);
