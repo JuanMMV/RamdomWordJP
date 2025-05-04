@@ -15,10 +15,11 @@ fetch('dicTest.json')
         `;
 
         // Mostrar información en la consola
-        console.log(`ID: ${randomItem.id}`);
-        console.log(`Kanji: ${randomItem.kanji[0].text}`);
-        console.log(`Kana: ${randomItem.kana[0].text}`);
-        console.log(`Español: ${randomItem.sense[0].gloss[0].text}`);
+        console.log(JSON.stringify(randomItem, null, 2));
+        // console.log(`ID: ${randomItem.id}`);
+        // console.log(`Kanji: ${randomItem.kanji[0].text}`);
+        // console.log(`Kana: ${randomItem.kana[0].text}`);
+        // console.log(`Español: ${randomItem.sense[0].gloss[0].text}`);
     })
     .catch(error => {
         console.error(`Error cargando el archivo JSON: ${error}`);
